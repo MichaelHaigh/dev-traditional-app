@@ -17,7 +17,8 @@ db.init_app(app)
 
 @app.route("/")
 def main():
-    return 'Hello World!'
+    message = "Hello World!"
+    return render_template('index.html', message=message)
 
 if __name__ == '__main__':
     app.run(host = '0.0.0.0')

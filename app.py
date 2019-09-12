@@ -18,7 +18,7 @@ db.init_app(app)
 
 @app.route("/")
 def main():
-    message = "Hello .DEV Audience"
+    message = "Hello Mark"
     return render_template('index.html', message=message)
 
 if __name__ == '__main__':

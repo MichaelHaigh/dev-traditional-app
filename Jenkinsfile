@@ -12,7 +12,7 @@ node("docker") {
     devdockerapp.push 'latest'
     devdockerapp.push "${env.GIT_COMMIT}"
 
-    stage "Calm: Update Hybrid App
+    stage "Calm: Update Hybrid App"
     step([$class: 'RunApplicationAction', actionName: 'UpdateApp', applicationName: 'dev-hybrid-app', runtimeVariables: '''{
         "label": "${env.GIT_COMMIT}"
     }'''])

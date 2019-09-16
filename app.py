@@ -47,7 +47,7 @@ def main():
 
     hostname = os.uname()[1]
 
-    return render_template('index.html', message=message, hostname=hostname
+    return render_template('index.html', message=message, hostname=hostname,
                            runningon=runningon, builtby=builtby)
 
 if __name__ == '__main__':

@@ -45,7 +45,8 @@ def main():
         runningon = "ahv.png"
         builtby   = "calm.png"
 
-    return render_template('index.html', message=message)
+    return render_template('index.html', message=message,
+                           runningon=runningon, builtby=builtby)
 
 if __name__ == '__main__':
     app.run(host = '0.0.0.0')

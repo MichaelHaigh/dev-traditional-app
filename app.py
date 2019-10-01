@@ -31,7 +31,7 @@ def is_aws():
 
 @app.route("/")
 def main():
-    message = "Hello World!"
+    message = "Hello 1-Click CI/CD!"
 
     if is_docker():
         runningon = "karbon.png"

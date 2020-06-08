@@ -2,7 +2,7 @@ FROM centos:centos7.6.1810
 
 LABEL maintainer="michael@nutanix.com"
 
-RUN yum install -y https://centos7.iuscommunity.org/ius-release.rpm && \
+RUN yum install -y https://repo.ius.io/ius-release-el7.rpm && \
     yum -y update && \
     yum -y install git vim wget gcc libpqxx-devel python-pip python-devel postgresql-server postgresql-devel postgresql-contrib
 
